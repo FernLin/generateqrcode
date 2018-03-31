@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>二维码制作</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="content">
+  <textarea style="width:200px; height:100px; border:solid 1px #f00; border-radius:2px; resize:none;" [(ngModel)]='text_in'
+    placeholder='输入需要转换的文本' rows="5" cols="25"></textarea>
+  <div>
+    <button ion-button (click)='convert()'>开始转换</button>
+    <button ion-button (click)='reset()'>重置文本</button>
+  </div>
+  <div id="qrcode"></div>
+</ion-content>
